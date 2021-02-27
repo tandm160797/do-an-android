@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVertical_0.05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVertical_0.35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVertical_0.75"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVertical_0.8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHorizontal_0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHorizontal_0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guiVertical_0.35"
+        app:layout_constraintEnd_toStartOf="@id/guiHorizontal_0.9"
+        app:layout_constraintStart_toEndOf="@id/guiHorizontal_0.1"
+        app:layout_constraintTop_toBottomOf="@id/guiVertical_0.05">
+
+        <ImageView
+            android:id="@+id/imgAndroidLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_android_logo"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="5"
+        app:layout_constraintBottom_toTopOf="@+id/guiVertical_0.75"
+        app:layout_constraintEnd_toStartOf="@id/guiHorizontal_0.9"
+        app:layout_constraintStart_toEndOf="@id/guiHorizontal_0.1"
+        app:layout_constraintTop_toBottomOf="@id/guiVertical_0.35">
+
+        <EditText
+            android:id="@+id/edtTenDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_edit_text"
+            android:hint="Tên đăng nhập">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_edit_text"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btnDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_button_blue"
+            android:text="Đăng nhập"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnQuenMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_button_pink"
+            android:text="Quên mật khẩu"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_button_red"
+            android:text="Đăng ký"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/guiVertical_0.8"
+        app:layout_constraintEnd_toStartOf="@id/guiHorizontal_0.9"
+        app:layout_constraintStart_toEndOf="@id/guiHorizontal_0.1"
+        app:layout_constraintTop_toBottomOf="@id/guiVertical_0.75">
+
+        <TextView
+            android:id="@+id/txtDangNhapVoiFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Đăng nhập với Facebook"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtDangNhapVoiGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_google_plus"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Đăng nhập với Google"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+
+        </TextView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

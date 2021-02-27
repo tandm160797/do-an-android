@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVertical_0.02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVertical_0.05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVertical_0.35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVertical_0.8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHorizontal_0.05"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05">
+
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHorizontal_0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHorizontal_0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHorizontal_0.95"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toTopOf="@+id/guiVertical_0.05"
+        app:layout_constraintEnd_toStartOf="@id/guiHorizontal_0.95"
+        app:layout_constraintStart_toEndOf="@id/guiHorizontal_0.05"
+        app:layout_constraintTop_toBottomOf="@id/guiVertical_0.02">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@drawable/border_radius_button_blue"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="ho_ten"
+                        android:textColor="#FAFAFA"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:id="@+id/imgMang1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_life"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/imgMang2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_life"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/imgMang3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_life"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/imgMang4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_life"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/imgMang5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_life"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/imgMang6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_life"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/txtCredit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_radius_button_yellow"
+                android:drawableLeft="@drawable/ic_credit"
+                android:gravity="center"
+                android:text="2000"
+                android:textColor="#FFFFFF">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toTopOf="@+id/guiVertical_0.35"
+        app:layout_constraintEnd_toStartOf="@id/guiHorizontal_0.9"
+        app:layout_constraintStart_toEndOf="@id/guiHorizontal_0.1"
+        app:layout_constraintTop_toBottomOf="@id/guiVertical_0.05">
+
+        <TextView
+            android:id="@+id/txtDiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Điểm: 0"
+            android:textColor="#CA5C82"
+            android:textSize="28sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtCauHoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Câu hỏi"
+            android:textColor="#5BC0DE"
+            android:textSize="24sp">
+
+        </TextView>
+
+        <Button
+
+            android:id="@+id/btnCauHoi"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border_radius_button_blue_enter"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#DFF2F8"
+            android:textSize="40sp">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="5"
+        app:layout_constraintBottom_toTopOf="@+id/guiVertical_0.8"
+        app:layout_constraintEnd_toStartOf="@id/guiHorizontal_0.9"
+        app:layout_constraintStart_toEndOf="@id/guiHorizontal_0.1"
+        app:layout_constraintTop_toBottomOf="@id/guiVertical_0.35">
+
+        <TextView
+            android:id="@+id/txtChonLinhVuc"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:linksClickable="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Chọn lĩnh vực"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnKhoaHocKyThuat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_button_blue"
+            android:text="Khoa học kỹ thuật"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnVanHoaXaHoiNgheThuat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_button_blue"
+            android:text="Văn hóa - Xã hội - Nghệ thuật"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnDiaLy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_button_blue"
+            android:text="Lịch sử - Địa lý"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnTheThao"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_button_blue"
+            android:text="Thể thao"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+
+        </Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
